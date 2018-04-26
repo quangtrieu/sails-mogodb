@@ -1,0 +1,37 @@
+{
+  "name": "AuthApi",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Setting roles and user for authorization",
+  "keywords": [],
+  "dependencies": {
+    "avsc": "^5.0.4",
+    "bcrypt": "^1.0.2",
+    "include-all": "^1.0.0",
+    "jsonwebtoken": "^7.4.3",
+    "kafka-node": "^2.2.1",
+    "rc": "1.0.1",
+    "sails": "~0.12.13",
+    "sails-disk": "^0.10.10",
+    "sails-hook-pagify": "^0.2.0",
+    "sails-mongo": "^0.12.2",
+    "sails-seed": "^0.5.0"
+  },
+  "scripts": {
+    "debug": "node debug app.js",
+    "start": "node app.js",
+    "test": "node ./node_modules/nyc/bin/nyc --reporter=html node ./node_modules/mocha/bin/mocha test/bootstrap.test.js test/integration/**/*.test.js"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "TrieuLQ",
+  "license": "",
+  "devDependencies": {
+    "mocha": "^1.19.0",
+    "nyc": "^10.3.2",
+    "supertest": "^3.0.0"
+  }
+}
